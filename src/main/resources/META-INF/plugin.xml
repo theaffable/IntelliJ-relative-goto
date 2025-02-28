@@ -35,7 +35,7 @@
             class="theaffable.relativegoto.action.RelativeJumpAction">
 
             <keyboard-shortcut
-                first-keystroke="alt I"
+                first-keystroke="shift control ctrl meta t"
                 keymap="$default"/>
         </action>
         
