@@ -8,14 +8,15 @@
     <name>Relative-goto</name>
 
     <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
-    <vendor email="support@yourcompany.com" url="https://www.yourcompany.com">YourCompany</vendor>
+    <vendor email="contact@theaffable.com" url="https://www.theaffable.com">theaffable</vendor>
 
     <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
          Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
     <description><![CDATA[
-    Enter short description for your plugin here.<br>
-    <em>most HTML tags may be used</em>
+
+    Relative-goto allows you to jump up and down the file lines relative to your current caret position, instead of using absolute lines.
+
   ]]></description>
 
     <!-- Product and plugin compatibility requirements.
@@ -29,13 +30,24 @@
     </extensions>
 
     <actions>
-        
+
+        <!-- Jump up action -->
         <action
-            id="theaffable.relativegoto.action.RelativeJumpAction"
-            class="theaffable.relativegoto.action.RelativeJumpAction">
+            id="theaffable.relativegoto.action.RelativeJumpUpAction"
+            class="theaffable.relativegoto.action.RelativeJumpUpAction">
 
             <keyboard-shortcut
                 first-keystroke="shift control ctrl meta t"
+                keymap="$default"/>
+        </action>
+
+        <!-- Jump down action -->
+        <action
+            id="theaffable.relativegoto.action.RelativeJumpDownAction"
+            class="theaffable.relativegoto.action.RelativeJumpDownAction">
+
+            <keyboard-shortcut
+                first-keystroke="shift control ctrl meta y"
                 keymap="$default"/>
         </action>
         

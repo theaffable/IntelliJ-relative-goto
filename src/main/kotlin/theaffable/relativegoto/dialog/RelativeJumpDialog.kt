@@ -6,8 +6,9 @@ import javax.swing.JComponent
 import javax.swing.JLabel
 import javax.swing.JPanel
 import javax.swing.JTextField
+import theaffable.relativegoto.service.JumpDirection
 
-class RelativeJumpDialog : DialogWrapper(false) {
+class RelativeJumpDialog(private val direction: JumpDirection) : DialogWrapper(false) {
     private val textField by lazy {
         createInputComponent()
     }
