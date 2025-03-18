@@ -17,6 +17,12 @@
 
     Relative-goto allows you to jump up and down the file lines relative to your current caret position, instead of using absolute lines.
 
+    Two separate actions are available, one for going up and one for going down but both of those can handle negative line values.
+    This means that you can use only `RelativeJumpUpAction` and pass in a negative line value to go down, instead of going up.
+
+    Default keyboard shortcuts might collide with IntelliJ built in actions.
+    I recommend removing the default shortcuts and binding them again deleting any unwanted actions.
+
   ]]></description>
 
     <!-- Product and plugin compatibility requirements.
@@ -37,7 +43,7 @@
             class="theaffable.relativegoto.action.RelativeJumpUpAction">
 
             <keyboard-shortcut
-                first-keystroke="shift control ctrl meta t"
+                first-keystroke="alt SEMICOLON"
                 keymap="$default"/>
         </action>
 
@@ -47,7 +53,7 @@
             class="theaffable.relativegoto.action.RelativeJumpDownAction">
 
             <keyboard-shortcut
-                first-keystroke="shift control ctrl meta y"
+                first-keystroke="alt QUOTE"
                 keymap="$default"/>
         </action>
         
