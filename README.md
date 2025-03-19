@@ -10,7 +10,7 @@ Jump to line relative to your caret position, instead of absolute line value
 
 ### Installation
 The plugin is not yet released on Jetbrains Marketplace.
-To install it build it first, Then navigate to
+To install it build it first, then navigate to
 `Plugins > click the cogwheel > Intstall plugin from disk` and select the zip file located in `build > distributions`
 
 ### Usage
